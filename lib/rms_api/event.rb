@@ -20,11 +20,13 @@ module RMSAPI
   end
 
   class Event
-    attr_reader :rms_id, :start_time, :location, :contact_name
+    attr_reader :rms_id, :start_time, :end_time, :title, :location, :contact_name
 
     def initialize(row)
       @rms_id = row['EVENT_ID']
       @start_time = row['START_TIME']
+      @end_time = row['END_TIME']
+      @title = row['EVENT_TITLE']
       @location = row['LOCATION']
       @contact_name = row['CONTACT_NAME']
     end
