@@ -25,6 +25,8 @@ module RMSAPI
     "ROW" : {
       "EVENT_ID" : "<%= rms_id %>",
       "START_TIME" : "<%= start_time %>",
+      "END_TIME" : "<%= end_time %>",
+      "EVENT_TITLE" : "<%= title %>",
       "LOCATION" : "<%= location %>",
       "CONTACT_NAME" : "<%= contact_name %>"
     }
